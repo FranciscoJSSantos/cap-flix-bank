@@ -1,0 +1,99 @@
+.insert_edit_wallpaper {
+  background-image: url("../../../assets/insert-wallpaper.jpg");
+  background-size: cover;
+  background-position: center;
+  flex: 1;
+  width: 100%;
+}
+
+::ng-deep .mat-form-field-appearance-outline .mat-form-field-outline {
+  background-color: white;
+  border-radius: 5px;
+}
+
+.insert_card{
+  width: 383px;
+  height: 655px;
+  border-color: #FFFFFF;
+  background-color: rgba(255, 255, 255, 45%);
+  border-radius: 80px;
+}
+
+.logo_capflix{
+  margin-top: 0rem !important;
+}
+
+.insert_title{
+  font-size: 26px;
+  font-weight: bolder;
+}
+
+@media only screen and (max-width: 400px) {
+  .insert_card{
+    width: 330px;
+    height: 580px;
+  }
+
+  .logo_capflix{
+    margin-top: -4rem !important;
+  }
+
+  .insert_nome_logo{
+    margin-bottom: 1rem !important;
+  }
+
+  .insert_title{
+    margin-top: 1rem !important;
+  }
+}
+
+.logo_capflix_image{
+  color: #fff;
+}
+
+.button_insert{
+  background-color: #12ABDB;
+  color: #fff;
+  border-radius: 10px;
+}
+
+.forgot_password{
+  text-decoration: none;
+  color: #5048E5;
+}
+
+.form-check {
+  margin-left: 4px;
+}
+
+.form-check-input:checked{
+  background-color: #5048E5 !important;
+}
+
+.separator_ou {
+  margin-top: 7px;
+  margin-bottom: 2rem;
+  position: absolute;
+  font-weight: bolder;
+}
+
+.separator_insert{
+  width: 40%;
+  border-top: 3px solid #000000;
+  border-radius: 10px;
+  background-color: #000000;
+  margin-bottom: 1rem;
+}
+
+.insert_visibility_icon{
+  cursor: pointer;
+}
+
+
+.divider:after,
+.divider:before {
+content: "";
+flex: 1;
+height: 1px;
+background: #eee;
+}

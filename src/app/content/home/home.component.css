@@ -1,0 +1,47 @@
+button{
+  width: 100%;
+}
+
+.custom_navbar{
+  position: fixed;
+  z-index: 10;
+  top: 0;
+  left: 0;
+}
+
+.links_menu_content{
+  margin-top: 2rem;
+  width: 12rem;
+  padding: 1rem 1rem;
+}
+
+
+
+mat-drawer-container{
+  height: 97vh;
+}
+
+.movie-image {
+max-width: 150px;
+max-height: 200px;
+}
+
+.button-down {
+  margin-top: 30px;
+}
+
+.text-holder {
+  word-wrap: break-word;
+  max-width: 600px;
+}
+
+textarea {
+  margin-top: 10px;
+  min-height: 180px;
+  min-width: 600px;
+  resize: none;
+}
+
+.title-text {
+  margin-bottom: 10px;
+}

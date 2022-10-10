@@ -1,0 +1,30 @@
+
+
+
+<div class="example-sidenav-content">
+  <button type="button" mat-button (click)="drawer.toggle()">
+    Toggle sidenav
+  </button>
+</div>
+
+<mat-drawer #drawer opened class="example-sidenav" mode="side">
+
+  <div class="links_menu_content">
+    <div class="">
+      <div class="border w-100 bg-white">
+        <button mat-raised-button color="primary" matBadge="8" matBadgePosition="before" matBadgeColor="accent">
+          Notícias
+        </button>
+      </div>
+    </div>
+
+    <div class="">
+      <div class="mt-4">
+        <button mat-raised-button color="warn" matBadge="3" matBadgePosition="before" matBadgeColor="accent">
+          Mensagens
+        </button>
+      </div>
+    </div>
+  </div>
+
+</mat-drawer>

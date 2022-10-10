@@ -1,0 +1,85 @@
+<div class="container-fluid wallpaper">
+
+  <div class="row justify-content-center align-items-center vh-100">
+
+    <mat-card class="login_card col-12 col-md-4 ">
+
+      <div class="text-center logo_capflix mb-3">
+        <img class="logo_capflix_image" src="../assets/logo_capflix_branco.png" alt="Logo Capflix">
+      </div>
+
+      <mat-card-title class="text-center">
+        <div class="mb-5 login_signin_nome_logo">
+          <img src="../assets/capflix_logo_nome.png" alt="Nome Logo Capflix">
+        </div>
+
+        <h2 class="mb-4 login_signin_title">Sign In</h2>
+
+      </mat-card-title>
+
+      <mat-card-content>
+
+        <form novalidate [formGroup]="loginForm" (submit)="submitLoginForm()" class="form-row">
+
+          <div class="text-center">
+
+            <mat-form-field class="col-sm-10 col-10" appearance="outline">
+              <mat-label>Email Adress</mat-label>
+              <input formControlName="email" type="email" matInput placeholder="admin@admin" required>
+              <mat-error *ngIf="loginFormErrors.email">
+                {{ loginFormErrors.email }}
+              </mat-error>
+              <mat-icon matPrefix>mail</mat-icon>
+            </mat-form-field>
+
+            <mat-form-field class="col-sm-10 col-10" appearance="outline">
+              <mat-label>Password</mat-label>
+              <input formControlName="password" [type]="typeInputPassword" matInput required>
+              <mat-error *ngIf="loginFormErrors.password">
+                {{ loginFormErrors.password }}
+              </mat-error>
+              <mat-icon matPrefix>lock</mat-icon>
+              <mat-icon matSuffix class="login_visibility_icon" (click)="toggleDisplay()">
+                {{ visibilityPassword }}
+              </mat-icon>
+            </mat-form-field>
+
+          </div>
+
+          <div class="d-flex justify-content-around">
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" [(value)]="keepLogged" (click)="changeKeepLogged()">
+              <label class="form-check-label" for="defaultCheck1">
+                Keep me logged in
+              </label>
+            </div>
+            <div>
+              <a class="link_login" href="#">Forgot Password?</a>
+            </div>
+          </div>
+
+
+          <div class="d-flex justify-content-center mt-5">
+
+            <button type="submit" class="col-sm-10 col-10 button_login" mat-raised-button
+              [disabled]="loginForm.invalid">
+              Log In
+            </button>
+          </div>
+
+        </form>
+
+        <div class="divider d-flex align-items-center my-4">
+          <p class="text-center fw-bold mx-3 mb-0">OU</p>
+        </div>
+
+        <div class="text-center mt-3">
+          <p class="font-weight-bold" (click)="sigUp()">Not a member? Sing Up </p>
+        </div>
+
+      </mat-card-content>
+    </mat-card>
+
+  </div>
+
+</div>
